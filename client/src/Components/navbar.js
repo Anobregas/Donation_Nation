@@ -9,7 +9,7 @@ export default function Navbar() {
       <Link to='Home'><img src={Logo} alt="logo" className="nav-image" /></Link>
       <ul className="nav justify-content-end">
         <li className="nav-item1">
-          <Link to="Dashboard" className="nav-link">Dashboard</Link>
+          <Link to="dashboard" className="nav-link">Dashboard</Link>
         </li>
         <li className="nav-item2">
           <Link to="CreateCharity" className="nav-link">Create Charity</Link>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client'
 import './App.css';
 import Home from './pages/home';
@@ -20,7 +20,7 @@ export default function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <BrowserRouter>
+        <HashRouter>
           <Navbar />
           <Routes>
             <Route path="/" element={<Login />} />
@@ -32,7 +32,7 @@ export default function App() {
             <Route path="/createCharity" element={<CreateCharity />} />
             <Route path="/charityExpand" element={<CharityExpand />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </ApolloProvider>
   );
